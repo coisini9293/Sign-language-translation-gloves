@@ -6,7 +6,7 @@ const Technology = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">技术详解</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">技术原理</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             深入了解手语翻译手套的技术原理和实现方案
           </p>

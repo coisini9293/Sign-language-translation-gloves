@@ -28,7 +28,7 @@ const Home = () => {
             一款低成本、能实时将手语翻译成语音的智能手套
           </p>
           <div className="flex flex-col xl:flex-row gap-4 justify-center items-center">
-            <Link to="/about">
+            <Link to="/story">
               <Button size="lg" className="text-base px-8 shadow-lg">
                 了解更多 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

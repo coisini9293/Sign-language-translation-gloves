@@ -1,10 +1,7 @@
 import Home from './pages/Home';
-import About from './pages/About';
+import Product from './pages/Product';
 import Technology from './pages/Technology';
-import Progress from './pages/Progress';
-import Cases from './pages/Cases';
-import Resources from './pages/Resources';
-import Blog from './pages/Blog';
+import Story from './pages/Story';
 import Contact from './pages/Contact';
 import type { ReactNode } from 'react';
 
@@ -22,34 +19,19 @@ const routes: RouteConfig[] = [
     element: <Home />
   },
   {
-    name: '关于我们',
-    path: '/about',
-    element: <About />
+    name: '产品介绍',
+    path: '/product',
+    element: <Product />
   },
   {
-    name: '技术详解',
+    name: '技术原理',
     path: '/technology',
     element: <Technology />
   },
   {
-    name: '验证与进展',
-    path: '/progress',
-    element: <Progress />
-  },
-  {
-    name: '用户案例',
-    path: '/cases',
-    element: <Cases />
-  },
-  {
-    name: '支持与资源',
-    path: '/resources',
-    element: <Resources />
-  },
-  {
-    name: '博客动态',
-    path: '/blog',
-    element: <Blog />
+    name: '背景故事',
+    path: '/story',
+    element: <Story />
   },
   {
     name: '联系我们',

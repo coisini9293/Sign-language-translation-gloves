@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Users, Target } from "lucide-react";
 
-const About = () => {
+const Story = () => {
   const teamMembers = [
     {
       name: "Carolin",
@@ -27,9 +27,9 @@ const About = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">关于我们</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">背景故事</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            用科技的力量，为听障人士搭建通往有声世界的桥梁
+            一次偶然的相遇，开启了改变听障人士生活的旅程
           </p>
         </div>
 
@@ -128,4 +128,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Story;

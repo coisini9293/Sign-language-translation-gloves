@@ -33,11 +33,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/contact">
-              <Button size="sm" className="ml-4">
-                联系我们
-              </Button>
-            </Link>
           </div>
 
           <button
