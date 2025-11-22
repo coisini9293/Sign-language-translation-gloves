@@ -77,11 +77,11 @@ const Home = () => {
           <h2 className="text-3xl xl:text-4xl font-bold text-center text-foreground mb-12">
             Product Workflow
           </h2>
-          <div className="aspect-video bg-secondary rounded-2xl shadow-elegant overflow-hidden border border-border/50">
+          <div className="aspect-video bg-background rounded-2xl shadow-elegant overflow-hidden border border-border/50 flex items-center justify-center p-8">
             <img
-              src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
-              alt="Product workflow demonstration"
-              className="w-full h-full object-cover"
+              src="https://miaoda-site-img.cdn.bcebos.com/images/96807189-a6c6-483e-b011-c774b4293da8.jpg"
+              alt="Product workflow diagram"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
