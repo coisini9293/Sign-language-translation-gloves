@@ -14,27 +14,27 @@ interface RouteConfig {
 
 const routes: RouteConfig[] = [
   {
-    name: '首页',
+    name: 'Home',
     path: '/',
     element: <Home />
   },
   {
-    name: '产品介绍',
+    name: 'Product',
     path: '/product',
     element: <Product />
   },
   {
-    name: '技术原理',
+    name: 'Technology',
     path: '/technology',
     element: <Technology />
   },
   {
-    name: '背景故事',
+    name: 'Story',
     path: '/story',
     element: <Story />
   },
   {
-    name: '联系我们',
+    name: 'Contact',
     path: '/contact',
     element: <Contact />
   }

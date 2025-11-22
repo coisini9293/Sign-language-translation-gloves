@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-14">
           <Link to="/" className="flex items-center gap-2">
             <div className="text-xl font-bold text-background tracking-tight">
-              手语翻译手套
+              Sign Language Glove
             </div>
           </Link>
 
@@ -35,7 +35,7 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <Link to="/contact">
               <Button size="sm" className="bg-primary hover:bg-primary/90">
-                采购 / 合作
+                Purchase / Partner
               </Button>
             </Link>
           </div>

@@ -8,14 +8,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 xl:px-8">
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">关于我们</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-4">About Us</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              致力于用科技消除沟通障碍，为听障人士提供低成本、高精度的实时手语翻译解决方案。
+              Dedicated to using technology to eliminate communication barriers, providing low-cost, high-precision real-time sign language translation solutions for hearing-impaired individuals.
             </p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">联系方式</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Contact</h3>
             <div className="text-muted-foreground space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">关注我们</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a 
                 href="#" 
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border/50 text-center text-muted-foreground text-sm">
-          <p>{currentYear} 手语翻译手套</p>
+          <p>{currentYear} Sign Language Glove</p>
         </div>
       </div>
     </footer>

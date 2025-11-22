@@ -6,18 +6,18 @@ const Technology = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">技术原理</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">Technical Principles</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            深入了解手语翻译手套的技术原理和实现方案
+            In-depth understanding of the technical principles and implementation solutions of the sign language glove
           </p>
         </div>
 
         <section className="mb-16">
-          <Card className="shadow-elegant">
+          <Card className="shadow-elegant border-border/50">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <Workflow className="w-8 h-8 text-primary" />
-                <CardTitle className="text-3xl">系统总览</CardTitle>
+                <CardTitle className="text-3xl">System Overview</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
@@ -27,24 +27,24 @@ const Technology = () => {
                     <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Hand className="w-10 h-10 text-primary-foreground" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">数据采集</h3>
-                    <p className="text-muted-foreground">弯曲传感器 + 陀螺仪</p>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Data Collection</h3>
+                    <p className="text-muted-foreground">Flex sensors and gyroscopes capture hand movements</p>
                   </div>
                   <div className="text-4xl text-muted-foreground">→</div>
                   <div className="flex-1 text-center">
                     <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Cpu className="w-10 h-10 text-primary-foreground" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">数据处理</h3>
-                    <p className="text-muted-foreground">ESP32主控板</p>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Data Processing</h3>
+                    <p className="text-muted-foreground">ESP32 microcontroller analyzes and recognizes gestures</p>
                   </div>
                   <div className="text-4xl text-muted-foreground">→</div>
                   <div className="flex-1 text-center">
                     <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Volume2 className="w-10 h-10 text-primary-foreground" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">语音输出</h3>
-                    <p className="text-muted-foreground">语音合成模块</p>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Voice Output</h3>
+                    <p className="text-muted-foreground">Speech synthesis module converts to natural voice</p>
                   </div>
                 </div>
               </div>
@@ -53,108 +53,181 @@ const Technology = () => {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">技术组成</h2>
-          <div className="grid grid-cols-1 gap-8">
-            <Card className="shadow-elegant">
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Data Collection Layer</h2>
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+            <Card className="shadow-elegant border-border/50">
               <CardHeader>
-                <CardTitle className="text-2xl">数据采集层</CardTitle>
+                <CardTitle className="text-2xl">Flex Sensors</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">弯曲传感器</h3>
-                  <p className="text-muted-foreground mb-4">
-                    在手套的每个手指上安装弯曲传感器，实时监测手指的弯曲角度。当手指弯曲时，传感器的电阻值会发生变化，通过测量电阻值的变化，我们可以精确地获取手指的弯曲程度。
-                  </p>
-                  <div className="bg-secondary p-6 rounded-lg">
-                    <img
-                      src="https://miaoda-site-img.cdn.bcebos.com/images/4ba29319-79b2-4f7c-a871-f0a7ebfc9ade.jpg"
-                      alt="弯曲传感器演示"
-                      className="w-full h-64 object-cover rounded-lg"
-                    />
-                  </div>
+              <CardContent>
+                <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
+                  <img
+                    src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
+                    alt="Flex sensor demonstration"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">陀螺仪</h3>
-                  <p className="text-muted-foreground mb-4">
-                    在手套背部安装六轴陀螺仪，用于检测手部的姿态和运动轨迹。陀螺仪可以测量手部在三维空间中的旋转角度和加速度，这对于识别需要手部移动的手语动作至关重要。
-                  </p>
-                  <div className="bg-secondary p-6 rounded-lg">
-                    <img
-                      src="https://miaoda-site-img.cdn.bcebos.com/images/b1c1c6e4-8748-4347-b3f8-b211ae5230a5.jpg"
-                      alt="陀螺仪演示"
-                      className="w-full h-64 object-cover rounded-lg"
-                    />
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-elegant">
-              <CardHeader>
-                <CardTitle className="text-2xl">处理中心</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <h3 className="text-xl font-bold text-foreground mb-2">ESP32主控板</h3>
-                <p className="text-muted-foreground">
-                  ESP32是一款功能强大且成本低廉的微控制器，具有以下特点：
+                <p className="text-muted-foreground mb-4">
+                  Five flex sensors are installed on each finger to capture the bending angle of each finger joint in real-time, achieving precise recognition of finger movements.
                 </p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                  <li>双核处理器，主频高达240MHz，能够快速处理传感器数据</li>
-                  <li>内置WiFi和蓝牙模块，支持无线数据传输</li>
-                  <li>低功耗设计，延长电池使用时间</li>
-                  <li>丰富的GPIO接口，方便连接各种传感器</li>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• High sensitivity: Captures subtle finger movements</li>
+                  <li>• Fast response: Millisecond-level data collection</li>
+                  <li>• Durability: Withstands over 1 million bends</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="shadow-elegant">
+            <Card className="shadow-elegant border-border/50">
               <CardHeader>
-                <CardTitle className="text-2xl">输出模块</CardTitle>
+                <CardTitle className="text-2xl">Gyroscope</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <h3 className="text-xl font-bold text-foreground mb-2">语音合成模块</h3>
-                <p className="text-muted-foreground">
-                  采用先进的语音合成技术，将识别出的手语文本转换为自然流畅的语音输出。支持多种音色选择，用户可以根据自己的喜好进行个性化设置。
-                </p>
-                <div className="bg-secondary p-6 rounded-lg">
-                  <p className="text-foreground font-semibold mb-2">语音样例：</p>
-                  <div className="flex items-center gap-4">
-                    <Volume2 className="w-6 h-6 text-primary" />
-                    <span className="text-muted-foreground">你好，很高兴认识你</span>
-                  </div>
+              <CardContent>
+                <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
+                  <img
+                    src="https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
+                    alt="Gyroscope demonstration"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
                 </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-elegant">
-              <CardHeader>
-                <CardTitle className="text-2xl">算法原理</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  我们的手语识别算法采用机器学习技术，通过以下步骤实现手语到语音的转换：
+                <p className="text-muted-foreground mb-4">
+                  A 6-axis gyroscope is installed on the back of the hand to capture the orientation and movement trajectory of the hand, providing comprehensive gesture information.
                 </p>
-                <ol className="list-decimal list-inside text-muted-foreground space-y-3 ml-4">
-                  <li>
-                    <span className="font-semibold text-foreground">数据预处理：</span>
-                    对传感器采集的原始数据进行滤波和归一化处理，去除噪声干扰
-                  </li>
-                  <li>
-                    <span className="font-semibold text-foreground">特征提取：</span>
-                    从预处理后的数据中提取关键特征，如手指弯曲角度、手部姿态等
-                  </li>
-                  <li>
-                    <span className="font-semibold text-foreground">模式识别：</span>
-                    使用训练好的机器学习模型，将提取的特征与手语词汇库进行匹配
-                  </li>
-                  <li>
-                    <span className="font-semibold text-foreground">语音合成：</span>
-                    将识别出的手语文本通过语音合成模块转换为语音输出
-                  </li>
-                </ol>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• 3-axis accelerometer: Captures hand acceleration</li>
+                  <li>• 3-axis gyroscope: Captures hand rotation angle</li>
+                  <li>• High precision: ±0.1° angle accuracy</li>
+                </ul>
               </CardContent>
             </Card>
           </div>
+        </section>
+
+        <section className="mb-16">
+          <Card className="shadow-elegant border-border/50">
+            <CardHeader>
+              <CardTitle className="text-2xl">Processing Center: ESP32 Microcontroller</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">Core Features</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      <span><strong>Dual-core processor:</strong> Parallel processing of sensor data and algorithm computation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      <span><strong>Low power consumption:</strong> Supports 8+ hours of continuous use</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      <span><strong>Wireless connectivity:</strong> Built-in WiFi and Bluetooth modules</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      <span><strong>Rich interfaces:</strong> Supports multiple sensor connections</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">Processing Flow</h3>
+                  <ol className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">1.</span>
+                      <span>Collect sensor data (flex sensors + gyroscope)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">2.</span>
+                      <span>Data preprocessing (filtering, normalization)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">3.</span>
+                      <span>Feature extraction (gesture feature vectors)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">4.</span>
+                      <span>Pattern recognition (machine learning algorithms)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">5.</span>
+                      <span>Result output (text or voice commands)</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="mb-16">
+          <Card className="shadow-elegant border-border/50">
+            <CardHeader>
+              <CardTitle className="text-2xl">Output Module: Speech Synthesis</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground mb-6">
+                The speech synthesis module converts recognized sign language text into natural, fluent voice output, enabling hearing-impaired individuals to communicate with non-sign language users.
+              </p>
+              <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+                <div className="bg-secondary p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-foreground mb-2">Natural Voice</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Uses advanced TTS technology to generate natural, fluent voice
+                  </p>
+                </div>
+                <div className="bg-secondary p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-foreground mb-2">Multi-language Support</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Supports multiple languages and dialects to meet different needs
+                  </p>
+                </div>
+                <div className="bg-secondary p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-foreground mb-2">Adjustable Speed</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Users can adjust speech speed and volume according to their needs
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card className="shadow-elegant border-border/50">
+            <CardHeader>
+              <CardTitle className="text-2xl">Algorithm Principles</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">1. Data Preprocessing</h3>
+                  <p className="text-muted-foreground">
+                    Raw sensor data undergoes filtering and normalization to remove noise and outliers, ensuring data quality and stability.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">2. Feature Extraction</h3>
+                  <p className="text-muted-foreground">
+                    Extracts key features from preprocessed data, such as finger bending angles, hand orientation, and movement trajectories, forming gesture feature vectors.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">3. Pattern Recognition</h3>
+                  <p className="text-muted-foreground">
+                    Uses machine learning algorithms (such as SVM, neural networks) to match gesture feature vectors with pre-trained sign language models, recognizing corresponding sign language meanings.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">4. Result Output</h3>
+                  <p className="text-muted-foreground">
+                    Converts recognized sign language meanings into text or voice output, enabling real-time communication.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
       </div>
     </div>
