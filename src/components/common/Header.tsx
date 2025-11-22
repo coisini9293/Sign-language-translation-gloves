@@ -1,48 +1,68 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import routes from "../../routes";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import routes from "@/routes";
 
-const Header: React.FC = () => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigation = routes.filter((route) => route.visible !== false);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-10">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              {/* Please replace with your website logo */}
-              <img
-                className="h-8 w-auto"
-                src={`https://miaoda-site-img.cdn.bcebos.com/placeholder/code_logo_default.png`}
-                alt="Website logo"
-              />
-              {/* Please replace with your website name */}
-              <span className="ml-2 text-xl font-bold text-blue-600">
-                Website Name
-              </span>
-            </Link>
-          </div>
+    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
+      <nav className="max-w-7xl mx-auto px-4 xl:px-8">
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-xl">手</span>
+            </div>
+            <span className="text-xl font-bold text-foreground">手语翻译手套</span>
+          </Link>
 
-          {/* When there's only one page, you can remove the entire navigation section */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden xl:flex items-center gap-1">
             {navigation.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 text-base font-medium rounded-md ${
-                  location.pathname === item.path
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                } transition duration-300`}
               >
-                {item.name}
+                <Button
+                  variant={location.pathname === item.path ? "secondary" : "ghost"}
+                  className="text-base"
+                >
+                  {item.name}
+                </Button>
               </Link>
             ))}
           </div>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="xl:hidden p-2"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {isMenuOpen && (
+          <div className="xl:hidden py-4 space-y-2">
+            {navigation.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Button
+                  variant={location.pathname === item.path ? "secondary" : "ghost"}
+                  className="w-full justify-start text-base"
+                >
+                  {item.name}
+                </Button>
+              </Link>
+            ))}
+          </div>
+        )}
       </nav>
     </header>
   );
