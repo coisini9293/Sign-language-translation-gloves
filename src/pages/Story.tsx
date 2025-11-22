@@ -14,12 +14,6 @@ const Story = () => {
       role: "Technical Lead",
       description: "Electronic engineering major, focused on wearable device and sensor technology R&D, with extensive hardware development experience",
       image: "https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
-    },
-    {
-      name: "Wang Fang",
-      role: "Product Designer",
-      description: "Industrial design major, dedicated to creating humanized assistive devices",
-      image: "https://miaoda-image.cdn.bcebos.com/img/corpus/1fca7fa8d4dd4e6b850270f5f4b21a93.jpg"
     }
   ];
 
@@ -85,7 +79,7 @@ const Story = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <Card key={index} className="shadow-elegant border-border/50 hover:shadow-glow transition-all">
                 <CardContent className="pt-6">

@@ -3,27 +3,6 @@ import { CheckCircle2, TrendingUp, Users, Download, FileText, Presentation, Book
 import { Button } from "@/components/ui/button";
 
 const Product = () => {
-  const userCases = [
-    {
-      title: "Classroom Questions for Hearing-Impaired Children",
-      description: "Xiao Ming, a hearing-impaired child, can now freely ask and answer questions in class using the sign language glove, no longer missing learning opportunities due to communication barriers.",
-      image: "https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg",
-      impact: "Enhanced learning participation and confidence"
-    },
-    {
-      title: "Hospital Visits for Deaf Individuals",
-      description: "Ms. Li can accurately describe her symptoms to doctors through the sign language glove during hospital visits, allowing doctors to clearly understand her condition and greatly improving treatment efficiency.",
-      image: "https://miaoda-image.cdn.bcebos.com/img/corpus/1fca7fa8d4dd4e6b850270f5f4b21a93.jpg",
-      impact: "Improved doctor-patient communication quality"
-    },
-    {
-      title: "Workplace Communication for Hearing-Impaired Employees",
-      description: "Mr. Wang uses the sign language glove to participate in meetings and team discussions at work, expressing his ideas in real-time and communicating barrier-free with colleagues.",
-      image: "https://miaoda-site-img.cdn.bcebos.com/images/2aefc4cc-713c-45e1-89f6-ae4081548fa2.jpg",
-      impact: "Promoted workplace integration and team collaboration"
-    }
-  ];
-
   const resources = [
     {
       title: "Project Overview PPT",
@@ -157,32 +136,6 @@ const Product = () => {
               </div>
             </CardContent>
           </Card>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">User Cases</h2>
-          <div className="space-y-8">
-            {userCases.map((caseItem, index) => (
-              <Card key={index} className="shadow-elegant border-border/50 overflow-hidden">
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-0">
-                  <div className="aspect-video xl:aspect-auto">
-                    <img
-                      src={caseItem.image}
-                      alt={caseItem.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-8 flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-foreground mb-4">{caseItem.title}</h3>
-                    <p className="text-lg text-muted-foreground mb-4">{caseItem.description}</p>
-                    <div className="bg-primary/10 p-4 rounded-lg">
-                      <p className="text-primary font-medium">✓ {caseItem.impact}</p>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
         </section>
 
         <section className="mb-16">
