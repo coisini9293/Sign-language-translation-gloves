@@ -1,8 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, TrendingUp, Download, FileText, Presentation, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Product = () => {
+  const navigate = useNavigate();
   const resources = [
     {
       title: "Project Overview PPT",
@@ -108,14 +110,13 @@ const Product = () => {
                 <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
                   We sincerely invite academic research institutions, special education schools, corporate sponsors, and manufacturing partners to collaborate with us in promoting the development and popularization of sign language translation technology.
                 </p>
-                <div className="flex flex-col xl:flex-row gap-4 justify-center">
-                  <Button size="lg" className="text-base px-8">
-                    Become a Partner
-                  </Button>
-                  <Button size="lg" variant="outline" className="text-base px-8 bg-card/50">
-                    Learn More
-                  </Button>
-                </div>
+                <Button 
+                  size="lg" 
+                  className="text-base px-8"
+                  onClick={() => navigate('/contact')}
+                >
+                  Become a Partner
+                </Button>
               </div>
             </CardContent>
           </Card>
