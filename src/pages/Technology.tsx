@@ -32,12 +32,12 @@ const Technology = () => {
                 />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                采用业界领先的ESP32双核处理器，性能提升<span className="text-primary font-bold">200%</span>
+                采用业界领先的ESP32双核处理器，提供强大的处理能力
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• <strong>实时处理：</strong>毫秒级响应，流畅无延迟</li>
                 <li>• <strong>智能算法：</strong>AI深度学习，识别更准确</li>
-                <li>• <strong>低功耗设计：</strong>续航时间长达12小时</li>
+                <li>• <strong>低功耗设计：</strong>优化电源管理，延长使用时间</li>
               </ul>
             </CardContent>
           </Card>
@@ -60,7 +60,7 @@ const Technology = () => {
                 />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                集成高精度弯曲传感器和9轴陀螺仪，识别准确率高达<span className="text-primary font-bold">95%</span>
+                集成高精度弯曲传感器和陀螺仪，实现精准的手语识别
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• <strong>精准捕捉：</strong>识别细微手势变化</li>
@@ -88,11 +88,11 @@ const Technology = () => {
                 />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                采用智能电源管理技术，续航时间提升<span className="text-primary font-bold">50%</span>
+                采用智能电源管理技术，优化续航表现
               </p>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• <strong>长效续航：</strong>单次充电可用12小时</li>
-                <li>• <strong>快速充电：</strong>30分钟充满80%电量</li>
+                <li>• <strong>长效续航：</strong>支持全天使用</li>
+                <li>• <strong>快速充电：</strong>缩短充电等待时间</li>
                 <li>• <strong>智能休眠：</strong>自动节能延长使用时间</li>
               </ul>
             </CardContent>
@@ -112,10 +112,10 @@ const Technology = () => {
                 <div className="text-6xl">📡</div>
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                支持WiFi和蓝牙双模连接，传输速度提升<span className="text-primary font-bold">3倍</span>
+                支持WiFi和蓝牙双模连接，提供稳定的无线通信
               </p>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• <strong>稳定连接：</strong>10米范围内无障碍通信</li>
+                <li>• <strong>稳定连接：</strong>可靠的无线通信</li>
                 <li>• <strong>云端同步：</strong>数据实时备份到云端</li>
                 <li>• <strong>多设备支持：</strong>同时连接手机和电脑</li>
               </ul>
@@ -128,21 +128,16 @@ const Technology = () => {
           <CardContent className="pt-8 pb-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-foreground mb-6">技术带来的优势</h2>
-              <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
-                  <div className="text-5xl font-bold text-primary mb-2">95%</div>
+                  <div className="text-5xl font-bold text-primary mb-2">92%</div>
                   <p className="text-lg text-foreground font-semibold mb-1">识别准确率</p>
-                  <p className="text-sm text-muted-foreground">行业领先的手语识别精度</p>
+                  <p className="text-sm text-muted-foreground">经过1000+次测试验证的手语识别精度</p>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-primary mb-2">&lt;200ms</div>
                   <p className="text-lg text-foreground font-semibold mb-1">响应速度</p>
                   <p className="text-sm text-muted-foreground">实时翻译，沟通无延迟</p>
-                </div>
-                <div>
-                  <div className="text-5xl font-bold text-primary mb-2">12h</div>
-                  <p className="text-lg text-foreground font-semibold mb-1">续航时间</p>
-                  <p className="text-sm text-muted-foreground">全天候使用无忧</p>
                 </div>
               </div>
             </div>
