@@ -5,22 +5,22 @@ import { Button } from "@/components/ui/button";
 const Product = () => {
   const resources = [
     {
-      title: "项目简介PPT",
-      description: "详细介绍手语翻译手套项目的背景、技术方案和应用场景",
+      title: "Project Overview PPT",
+      description: "Detailed introduction to the background, technical solutions, and application scenarios of the sign language glove project",
       icon: Presentation,
       fileSize: "5.2 MB",
       downloadUrl: "#"
     },
     {
-      title: "技术白皮书",
-      description: "深入分析手语翻译手套的技术原理、算法设计和性能指标",
+      title: "Technical Whitepaper",
+      description: "In-depth analysis of the technical principles, algorithm design, and performance metrics of the sign language glove",
       icon: FileText,
       fileSize: "3.8 MB",
       downloadUrl: "#"
     },
     {
-      title: "宣传手册",
-      description: "面向公众的产品宣传资料，包含产品特点和使用指南",
+      title: "Promotional Brochure",
+      description: "Public-facing product promotional materials, including product features and user guides",
       icon: BookOpen,
       fileSize: "2.1 MB",
       downloadUrl: "#"
@@ -31,27 +31,27 @@ const Product = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-4">产品介绍</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-4">Product Introduction</h1>
           <p className="text-xl text-muted-foreground">
-            从技术验证到实际应用，我们的产品正在改变听障人士的生活
+            From technical validation to practical application, our product is changing the lives of hearing-impaired individuals
           </p>
         </div>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">技术验证</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Technical Validation</h2>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="shadow-elegant border-border/50">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <CheckCircle2 className="w-6 h-6 text-primary" />
-                  识别准确率
+                  Recognition Accuracy
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-center">
                   <div className="text-5xl font-bold text-primary mb-2">92%</div>
                   <p className="text-muted-foreground">
-                    经过1000+次测试，手语识别准确率稳定在92%以上
+                    After 1000+ tests, sign language recognition accuracy remains stable above 92%
                   </p>
                 </div>
               </CardContent>
@@ -61,14 +61,14 @@ const Product = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <TrendingUp className="w-6 h-6 text-primary" />
-                  响应速度
+                  Response Speed
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-center">
                   <div className="text-5xl font-bold text-primary mb-2">&lt;200ms</div>
                   <p className="text-muted-foreground">
-                    从手势识别到语音输出，平均响应时间小于200毫秒
+                    From gesture recognition to voice output, average response time is less than 200 milliseconds
                   </p>
                 </div>
               </CardContent>
@@ -77,7 +77,7 @@ const Product = () => {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">资源下载</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Resource Downloads</h2>
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
             {resources.map((resource, index) => (
               <Card key={index} className="shadow-elegant border-border/50 hover:shadow-glow transition-all">
@@ -88,10 +88,10 @@ const Product = () => {
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2">{resource.title}</h3>
                     <p className="text-muted-foreground mb-4">{resource.description}</p>
-                    <p className="text-sm text-muted-foreground mb-4">文件大小：{resource.fileSize}</p>
+                    <p className="text-sm text-muted-foreground mb-4">File Size: {resource.fileSize}</p>
                     <Button className="w-full">
                       <Download className="w-4 h-4 mr-2" />
-                      下载
+                      Download
                     </Button>
                   </div>
                 </CardContent>
@@ -104,16 +104,16 @@ const Product = () => {
           <Card className="shadow-elegant border-border/50 bg-gradient-to-br from-card to-secondary/30">
             <CardContent className="pt-8 pb-8">
               <div className="text-center">
-                <h2 className="text-3xl font-bold text-foreground mb-4">寻求合作</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">Seeking Partnerships</h2>
                 <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  我们诚挚邀请学术研究机构、特殊教育学校、企业赞助商和生产制造伙伴与我们合作，共同推动手语翻译技术的发展和普及。
+                  We sincerely invite academic research institutions, special education schools, corporate sponsors, and manufacturing partners to collaborate with us in promoting the development and popularization of sign language translation technology.
                 </p>
                 <div className="flex flex-col xl:flex-row gap-4 justify-center">
                   <Button size="lg" className="text-base px-8">
-                    成为合作伙伴
+                    Become a Partner
                   </Button>
                   <Button size="lg" variant="outline" className="text-base px-8 bg-card/50">
-                    了解更多
+                    Learn More
                   </Button>
                 </div>
               </div>
