@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Cpu, Zap, Battery, Wifi } from "lucide-react";
+import { Cpu, Zap, Wifi } from "lucide-react";
 
 const Technology = () => {
   return (
@@ -13,7 +13,7 @@ const Technology = () => {
         </div>
 
         {/* 主要技术亮点 */}
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mb-16">
           <Card className="shadow-elegant border-border/50">
             <CardHeader>
               <div className="flex items-center gap-3 mb-4">
@@ -37,7 +37,7 @@ const Technology = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li>• <strong>实时处理：</strong>毫秒级响应，流畅无延迟</li>
                 <li>• <strong>智能算法：</strong>AI深度学习，识别更准确</li>
-                <li>• <strong>低功耗设计：</strong>优化电源管理，延长使用时间</li>
+                <li>• <strong>低功耗设计：</strong>优化能耗表现</li>
               </ul>
             </CardContent>
           </Card>
@@ -66,34 +66,6 @@ const Technology = () => {
                 <li>• <strong>精准捕捉：</strong>识别细微手势变化</li>
                 <li>• <strong>全方位感知：</strong>3D空间手势追踪</li>
                 <li>• <strong>抗干扰强：</strong>复杂环境稳定运行</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-elegant border-border/50">
-            <CardHeader>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                  <Battery className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle className="text-2xl">智能电源管理</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
-                  alt="电源管理"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="text-lg text-muted-foreground mb-4">
-                采用智能电源管理技术，优化续航表现
-              </p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• <strong>长效续航：</strong>支持全天使用</li>
-                <li>• <strong>快速充电：</strong>缩短充电等待时间</li>
-                <li>• <strong>智能休眠：</strong>自动节能延长使用时间</li>
               </ul>
             </CardContent>
           </Card>

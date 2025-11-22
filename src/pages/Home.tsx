@@ -171,9 +171,9 @@ const Home = () => {
 
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
             <div className="xl:order-2">
-              <h3 className="text-2xl font-bold text-foreground mb-4">轻量舒适，持久续航</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">轻量舒适设计</h3>
               <p className="text-muted-foreground text-lg mb-6">
-                轻量化设计确保长时间佩戴的舒适性，智能电源管理技术提供持久续航，让您随时随地畅快沟通。
+                轻量化设计确保长时间佩戴的舒适性，让您随时随地畅快沟通。
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
@@ -186,13 +186,13 @@ const Home = () => {
                   <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-primary text-sm">✓</span>
                   </div>
-                  <span className="text-muted-foreground">长效续航，全天使用</span>
+                  <span className="text-muted-foreground">适合长时间佩戴</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-primary text-sm">✓</span>
                   </div>
-                  <span className="text-muted-foreground">智能节能，延长使用时间</span>
+                  <span className="text-muted-foreground">便携易用，随时沟通</span>
                 </li>
               </ul>
             </div>
