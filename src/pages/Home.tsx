@@ -27,18 +27,6 @@ const Home = () => {
           <p className="text-lg xl:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             一款低成本、能实时将手语翻译成语音的智能手套
           </p>
-          <div className="flex flex-col xl:flex-row gap-4 justify-center items-center">
-            <Link to="/story">
-              <Button size="lg" className="text-base px-8 shadow-lg">
-                了解更多 <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-            <Link to="/technology">
-              <Button size="lg" variant="outline" className="text-base px-8 bg-card/50 backdrop-blur-sm">
-                技术原理
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
