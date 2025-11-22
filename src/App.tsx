@@ -2,11 +2,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
+import ScrollToTop from '@/components/common/ScrollToTop';
 import routes from './routes';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
