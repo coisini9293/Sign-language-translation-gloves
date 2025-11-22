@@ -6,13 +6,13 @@ const Technology = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">核心技术</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">Core Technology</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            采用先进技术，为您带来卓越的使用体验
+            Adopting advanced technology to bring you an excellent user experience
           </p>
         </div>
 
-        {/* 主要技术亮点 */}
+        {/* Main Technology Highlights */}
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mb-16">
           <Card className="shadow-elegant border-border/50">
             <CardHeader>
@@ -20,24 +20,24 @@ const Technology = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Cpu className="w-6 h-6 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">ESP32双核处理器</CardTitle>
+                <CardTitle className="text-2xl">ESP32 Dual-Core Processor</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                 <img
                   src="https://miaoda-site-img.cdn.bcebos.com/images/96807189-a6c6-483e-b011-c774b4293da8.jpg"
-                  alt="ESP32处理器"
+                  alt="ESP32 Processor"
                   className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                采用业界领先的ESP32双核处理器，提供强大的处理能力
+                Utilizing industry-leading ESP32 dual-core processor, providing powerful processing capabilities
               </p>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• <strong>实时处理：</strong>毫秒级响应，流畅无延迟</li>
-                <li>• <strong>智能算法：</strong>AI深度学习，识别更准确</li>
-                <li>• <strong>低功耗设计：</strong>优化能耗表现</li>
+                <li>• <strong>Real-time Processing:</strong> Millisecond response, smooth and lag-free</li>
+                <li>• <strong>Intelligent Algorithms:</strong> AI deep learning for more accurate recognition</li>
+                <li>• <strong>Low Power Design:</strong> Optimized energy consumption performance</li>
               </ul>
             </CardContent>
           </Card>
@@ -48,24 +48,24 @@ const Technology = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">多传感器融合技术</CardTitle>
+                <CardTitle className="text-2xl">Multi-Sensor Fusion Technology</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                 <img
                   src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
-                  alt="传感器技术"
+                  alt="Sensor Technology"
                   className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                集成高精度弯曲传感器和陀螺仪，实现精准的手语识别
+                Integrating high-precision flex sensors and gyroscopes for accurate sign language recognition
               </p>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• <strong>精准捕捉：</strong>识别细微手势变化</li>
-                <li>• <strong>全方位感知：</strong>3D空间手势追踪</li>
-                <li>• <strong>抗干扰强：</strong>复杂环境稳定运行</li>
+                <li>• <strong>Precise Capture:</strong> Recognizes subtle gesture changes</li>
+                <li>• <strong>Omnidirectional Sensing:</strong> 3D spatial gesture tracking</li>
+                <li>• <strong>Strong Anti-Interference:</strong> Stable operation in complex environments</li>
               </ul>
             </CardContent>
           </Card>
@@ -76,7 +76,7 @@ const Technology = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Wifi className="w-6 h-6 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">无线连接技术</CardTitle>
+                <CardTitle className="text-2xl">Wireless Connectivity</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
@@ -84,32 +84,32 @@ const Technology = () => {
                 <div className="text-6xl">📡</div>
               </div>
               <p className="text-lg text-muted-foreground mb-4">
-                支持WiFi和蓝牙双模连接，提供稳定的无线通信
+                Supports WiFi and Bluetooth dual-mode connectivity, providing stable wireless communication
               </p>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• <strong>稳定连接：</strong>可靠的无线通信</li>
-                <li>• <strong>云端同步：</strong>数据实时备份到云端</li>
-                <li>• <strong>多设备支持：</strong>同时连接手机和电脑</li>
+                <li>• <strong>Stable Connection:</strong> Reliable wireless communication</li>
+                <li>• <strong>Cloud Sync:</strong> Real-time data backup to cloud</li>
+                <li>• <strong>Multi-Device Support:</strong> Simultaneous connection to phone and computer</li>
               </ul>
             </CardContent>
           </Card>
         </div>
 
-        {/* 技术优势总结 */}
+        {/* Technology Advantages Summary */}
         <Card className="shadow-elegant border-border/50 bg-gradient-to-br from-card to-secondary/30">
           <CardContent className="pt-8 pb-8">
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-foreground mb-6">技术带来的优势</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Technology Advantages</h2>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
                   <div className="text-5xl font-bold text-primary mb-2">92%</div>
-                  <p className="text-lg text-foreground font-semibold mb-1">识别准确率</p>
-                  <p className="text-sm text-muted-foreground">经过1000+次测试验证的手语识别精度</p>
+                  <p className="text-lg text-foreground font-semibold mb-1">Recognition Accuracy</p>
+                  <p className="text-sm text-muted-foreground">Sign language recognition precision verified through 1000+ tests</p>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-primary mb-2">&lt;200ms</div>
-                  <p className="text-lg text-foreground font-semibold mb-1">响应速度</p>
-                  <p className="text-sm text-muted-foreground">实时翻译，沟通无延迟</p>
+                  <p className="text-lg text-foreground font-semibold mb-1">Response Speed</p>
+                  <p className="text-sm text-muted-foreground">Real-time translation with no communication delay</p>
                 </div>
               </div>
             </div>
