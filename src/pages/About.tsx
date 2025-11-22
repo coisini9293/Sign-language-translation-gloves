@@ -4,15 +4,15 @@ import { Heart, Users, Target } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "张明",
-      role: "项目负责人",
-      description: "电子工程专业，曾在多家科技公司担任硬件工程师",
+      name: "Carolin",
+      role: "商业负责人",
+      description: "商业管理专业，擅长市场分析和产品规划，致力于让科技产品更贴近用户需求",
       image: "https://miaoda-site-img.cdn.bcebos.com/images/2aefc4cc-713c-45e1-89f6-ae4081548fa2.jpg"
     },
     {
-      name: "李华",
-      role: "算法工程师",
-      description: "人工智能专业，专注于手势识别和机器学习算法研究",
+      name: "Stephen",
+      role: "技术负责人",
+      description: "电子工程专业，专注于可穿戴设备和传感器技术研发，拥有丰富的硬件开发经验",
       image: "https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
     },
     {
@@ -43,13 +43,13 @@ const About = () => {
             </CardHeader>
             <CardContent className="text-lg text-muted-foreground space-y-4">
               <p>
-                这个项目的诞生源于一次特殊的志愿者活动。在一所特殊教育学校，我们遇到了一群可爱的听障儿童。他们用手语表达着自己的想法，眼神中充满了对沟通的渴望。
+                这个项目的诞生源于一次听障社区的慈善活动。在那次志愿活动中，Carolin和Stephen相遇了。他们亲眼目睹了听障人士在与不懂手语的人交流时所面临的挑战。虽然市面上已经存在一些技术解决方案，但它们并不实用，也无法在日常生活中轻松使用。
               </p>
               <p>
-                那一刻，我们深刻地意识到，沟通障碍不应该成为他们融入社会的阻碍。作为工程师，我们有责任用自己的专业知识，为他们创造一个更好的沟通工具。
+                Carolin凭借她在商业领域的专业知识，立即看到了开发一款能够弥合这一沟通鸿沟的产品的潜力。她建议创造一个既实用又易于使用的解决方案。Stephen则凭借他在技术领域的背景，对这个想法感到非常兴奋。他提议开发一款能够将手语翻译成文字或语音的智能手套。
               </p>
               <p>
-                于是，手语翻译手套项目就这样诞生了。我们希望通过这个项目，让每一位听障人士都能自由地表达自己，让他们的声音被世界听见。
+                结合Carolin对市场的深刻理解和Stephen的技术专长，他们决定组建团队。两人都决心创造一款能够打破沟通障碍、改善听障社区生活的产品。于是，手语翻译手套项目就这样诞生了。
               </p>
             </CardContent>
           </Card>
