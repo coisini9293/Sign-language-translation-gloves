@@ -10,30 +10,34 @@ const Header = () => {
   const navigation = routes.filter((route) => route.visible !== false);
 
   return (
-    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
+    <header className="bg-card/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">手</span>
+          <Link to="/" className="flex items-center gap-2">
+            <div className="text-2xl font-bold text-foreground tracking-tight">
+              手语翻译手套
             </div>
-            <span className="text-xl font-bold text-foreground">手语翻译手套</span>
           </Link>
 
-          <div className="hidden xl:flex items-center gap-1">
+          <div className="hidden xl:flex items-center gap-8">
             {navigation.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === item.path
+                    ? "text-primary"
+                    : "text-foreground/80"
+                }`}
               >
-                <Button
-                  variant={location.pathname === item.path ? "secondary" : "ghost"}
-                  className="text-base"
-                >
-                  {item.name}
-                </Button>
+                {item.name}
               </Link>
             ))}
+            <Link to="/contact">
+              <Button size="sm" className="ml-4">
+                联系我们
+              </Button>
+            </Link>
           </div>
 
           <button
@@ -52,13 +56,13 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 onClick={() => setIsMenuOpen(false)}
+                className={`block px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  location.pathname === item.path
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground/80 hover:bg-secondary"
+                }`}
               >
-                <Button
-                  variant={location.pathname === item.path ? "secondary" : "ghost"}
-                  className="w-full justify-start text-base"
-                >
-                  {item.name}
-                </Button>
+                {item.name}
               </Link>
             ))}
           </div>
