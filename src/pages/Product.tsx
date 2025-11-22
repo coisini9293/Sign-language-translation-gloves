@@ -1,26 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, TrendingUp, Users, Download, FileText, Presentation, BookOpen } from "lucide-react";
+import { CheckCircle2, TrendingUp, Download, FileText, Presentation, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Product = () => {
   const resources = [
     {
-      title: "Project Overview PPT",
-      description: "Detailed introduction to the background, technical solutions, and application scenarios of the sign language glove project",
+      title: "项目简介PPT",
+      description: "详细介绍手语翻译手套项目的背景、技术方案和应用场景",
       icon: Presentation,
       fileSize: "5.2 MB",
       downloadUrl: "#"
     },
     {
-      title: "Technical Whitepaper",
-      description: "In-depth analysis of the technical principles, algorithm design, and performance metrics of the sign language glove",
+      title: "技术白皮书",
+      description: "深入分析手语翻译手套的技术原理、算法设计和性能指标",
       icon: FileText,
       fileSize: "3.8 MB",
       downloadUrl: "#"
     },
     {
-      title: "Promotional Brochure",
-      description: "Public-facing product promotional materials, including product features and user guides",
+      title: "宣传手册",
+      description: "面向公众的产品宣传资料，包含产品特点和使用指南",
       icon: BookOpen,
       fileSize: "2.1 MB",
       downloadUrl: "#"
@@ -31,27 +31,27 @@ const Product = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-4">Product Introduction</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-4">产品介绍</h1>
           <p className="text-xl text-muted-foreground">
-            From technical validation to practical application, our product is changing the lives of hearing-impaired individuals
+            从技术验证到实际应用，我们的产品正在改变听障人士的生活
           </p>
         </div>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Technical Validation</h2>
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">技术验证</h2>
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="shadow-elegant border-border/50">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <CheckCircle2 className="w-6 h-6 text-primary" />
-                  Recognition Accuracy
+                  识别准确率
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-center">
                   <div className="text-5xl font-bold text-primary mb-2">92%</div>
                   <p className="text-muted-foreground">
-                    After 1000+ tests, sign language recognition accuracy remains stable above 92%
+                    经过1000+次测试，手语识别准确率稳定在92%以上
                   </p>
                 </div>
               </CardContent>
@@ -61,31 +61,14 @@ const Product = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <TrendingUp className="w-6 h-6 text-primary" />
-                  Response Speed
+                  响应速度
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-center">
                   <div className="text-5xl font-bold text-primary mb-2">&lt;200ms</div>
                   <p className="text-muted-foreground">
-                    From gesture recognition to voice output, average response time is less than 200 milliseconds
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-elegant border-border/50">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Users className="w-6 h-6 text-primary" />
-                  User Satisfaction
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-center">
-                  <div className="text-5xl font-bold text-primary mb-2">95%</div>
-                  <p className="text-muted-foreground">
-                    Among users who participated in testing, 95% expressed willingness to use the product long-term
+                    从手势识别到语音输出，平均响应时间小于200毫秒
                   </p>
                 </div>
               </CardContent>
@@ -94,52 +77,7 @@ const Product = () => {
         </section>
 
         <section className="mb-16">
-          <Card className="shadow-elegant border-border/50">
-            <CardHeader>
-              <CardTitle className="text-2xl">User Feedback</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                <div className="bg-secondary/50 p-6 rounded-lg">
-                  <p className="text-lg text-muted-foreground italic mb-2">
-                    "This glove allowed my child to raise their hand and speak up in class for the first time. As a parent, I'm truly moved."
-                  </p>
-                  <p className="text-sm text-foreground font-medium">— Special Education Teacher Zhang</p>
-                </div>
-                <div className="bg-secondary/50 p-6 rounded-lg">
-                  <p className="text-lg text-muted-foreground italic mb-2">
-                    "With this device, I can finally go to the hospital independently without needing family members to accompany me every time."
-                  </p>
-                  <p className="text-sm text-foreground font-medium">— Hearing-Impaired User Ms. Li</p>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <h3 className="text-xl font-bold text-foreground mb-4">Testing Site Photos</h3>
-                <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
-                  <img
-                    src="https://miaoda-image.cdn.bcebos.com/img/corpus/1fca7fa8d4dd4e6b850270f5f4b21a93.jpg"
-                    alt="Testing site 1"
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                  <img
-                    src="https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
-                    alt="Testing site 2"
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                  <img
-                    src="https://miaoda-site-img.cdn.bcebos.com/images/2aefc4cc-713c-45e1-89f6-ae4081548fa2.jpg"
-                    alt="Testing site 3"
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Resource Downloads</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">资源下载</h2>
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
             {resources.map((resource, index) => (
               <Card key={index} className="shadow-elegant border-border/50 hover:shadow-glow transition-all">
@@ -150,10 +88,10 @@ const Product = () => {
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2">{resource.title}</h3>
                     <p className="text-muted-foreground mb-4">{resource.description}</p>
-                    <p className="text-sm text-muted-foreground mb-4">File Size: {resource.fileSize}</p>
+                    <p className="text-sm text-muted-foreground mb-4">文件大小：{resource.fileSize}</p>
                     <Button className="w-full">
                       <Download className="w-4 h-4 mr-2" />
-                      Download
+                      下载
                     </Button>
                   </div>
                 </CardContent>
@@ -166,16 +104,16 @@ const Product = () => {
           <Card className="shadow-elegant border-border/50 bg-gradient-to-br from-card to-secondary/30">
             <CardContent className="pt-8 pb-8">
               <div className="text-center">
-                <h2 className="text-3xl font-bold text-foreground mb-4">Seeking Partnerships</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">寻求合作</h2>
                 <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  We sincerely invite academic research institutions, special education schools, corporate sponsors, and manufacturing partners to collaborate with us in promoting the development and popularization of sign language translation technology.
+                  我们诚挚邀请学术研究机构、特殊教育学校、企业赞助商和生产制造伙伴与我们合作，共同推动手语翻译技术的发展和普及。
                 </p>
                 <div className="flex flex-col xl:flex-row gap-4 justify-center">
                   <Button size="lg" className="text-base px-8">
-                    Become a Partner
+                    成为合作伙伴
                   </Button>
                   <Button size="lg" variant="outline" className="text-base px-8 bg-card/50">
-                    Learn More
+                    了解更多
                   </Button>
                 </div>
               </div>
