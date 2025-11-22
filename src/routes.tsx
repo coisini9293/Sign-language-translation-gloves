@@ -3,6 +3,7 @@ import Product from './pages/Product';
 import Technology from './pages/Technology';
 import Story from './pages/Story';
 import Contact from './pages/Contact';
+import Shop from './pages/Shop';
 import type { ReactNode } from 'react';
 
 interface RouteConfig {
@@ -27,6 +28,11 @@ const routes: RouteConfig[] = [
     name: 'Technology',
     path: '/technology',
     element: <Technology />
+  },
+  {
+    name: 'Shop',
+    path: '/shop',
+    element: <Shop />
   },
   {
     name: 'Story',

@@ -1,201 +1,153 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Cpu, Hand, Volume2, Workflow } from "lucide-react";
+import { Cpu, Zap, Battery, Wifi } from "lucide-react";
 
 const Technology = () => {
   return (
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">Technical Principles</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold text-foreground mb-6">核心技术</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            In-depth understanding of the technical principles and implementation solutions of the sign language glove
+            采用先进技术，为您带来卓越的使用体验
           </p>
         </div>
 
-        <section className="mb-16">
+        {/* 主要技术亮点 */}
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-16">
           <Card className="shadow-elegant border-border/50">
             <CardHeader>
-              <div className="flex items-center gap-3">
-                <Workflow className="w-8 h-8 text-primary" />
-                <CardTitle className="text-3xl">System Overview</CardTitle>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <Cpu className="w-6 h-6 text-primary" />
+                </div>
+                <CardTitle className="text-2xl">ESP32双核处理器</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
-              <div className="bg-secondary p-8 rounded-lg">
-                <div className="flex flex-col xl:flex-row items-center justify-between gap-8">
-                  <div className="flex-1 text-center">
-                    <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Hand className="w-10 h-10 text-primary-foreground" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">Data Collection</h3>
-                    <p className="text-muted-foreground">Flex sensors and gyroscopes capture hand movements</p>
-                  </div>
-                  <div className="text-4xl text-muted-foreground">→</div>
-                  <div className="flex-1 text-center">
-                    <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Cpu className="w-10 h-10 text-primary-foreground" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">Data Processing</h3>
-                    <p className="text-muted-foreground">ESP32 microcontroller analyzes and recognizes gestures</p>
-                  </div>
-                  <div className="text-4xl text-muted-foreground">→</div>
-                  <div className="flex-1 text-center">
-                    <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Volume2 className="w-10 h-10 text-primary-foreground" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">Voice Output</h3>
-                    <p className="text-muted-foreground">Speech synthesis module converts to natural voice</p>
-                  </div>
-                </div>
+              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://miaoda-site-img.cdn.bcebos.com/images/96807189-a6c6-483e-b011-c774b4293da8.jpg"
+                  alt="ESP32处理器"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <p className="text-lg text-muted-foreground mb-4">
+                采用业界领先的ESP32双核处理器，性能提升<span className="text-primary font-bold">200%</span>
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• <strong>实时处理：</strong>毫秒级响应，流畅无延迟</li>
+                <li>• <strong>智能算法：</strong>AI深度学习，识别更准确</li>
+                <li>• <strong>低功耗设计：</strong>续航时间长达12小时</li>
+              </ul>
             </CardContent>
           </Card>
-        </section>
 
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Data Collection Layer</h2>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-            <Card className="shadow-elegant border-border/50">
-              <CardHeader>
-                <CardTitle className="text-2xl">Flex Sensors</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
-                  <img
-                    src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
-                    alt="Flex sensor demonstration"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Five flex sensors are installed on each finger to capture the bending angle of each finger joint in real-time, achieving precise recognition of finger movements.
-                </p>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• High sensitivity: Captures subtle finger movements</li>
-                  <li>• Fast response: Millisecond-level data collection</li>
-                  <li>• Durability: Withstands over 1 million bends</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-elegant border-border/50">
-              <CardHeader>
-                <CardTitle className="text-2xl">Gyroscope</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
-                  <img
-                    src="https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
-                    alt="Gyroscope demonstration"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  A 6-axis gyroscope is installed on the back of the hand to capture the orientation and movement trajectory of the hand, providing comprehensive gesture information.
-                </p>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• 3-axis accelerometer: Captures hand acceleration</li>
-                  <li>• 3-axis gyroscope: Captures hand rotation angle</li>
-                  <li>• High precision: ±0.1° angle accuracy</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <section className="mb-16">
           <Card className="shadow-elegant border-border/50">
             <CardHeader>
-              <CardTitle className="text-2xl">Processing Center: ESP32 Microcontroller</CardTitle>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-primary" />
+                </div>
+                <CardTitle className="text-2xl">多传感器融合技术</CardTitle>
+              </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">Core Features</h3>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span>
-                      <span><strong>Dual-core processor:</strong> Parallel processing of sensor data and algorithm computation</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span>
-                      <span><strong>Low power consumption:</strong> Supports 8+ hours of continuous use</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span>
-                      <span><strong>Wireless connectivity:</strong> Built-in WiFi and Bluetooth modules</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span>
-                      <span><strong>Rich interfaces:</strong> Supports multiple sensor connections</span>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">Processing Flow</h3>
-                  <ol className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">1.</span>
-                      <span>Collect sensor data (flex sensors + gyroscope)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">2.</span>
-                      <span>Data preprocessing (filtering, normalization)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">3.</span>
-                      <span>Feature extraction (gesture feature vectors)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">4.</span>
-                      <span>Pattern recognition (machine learning algorithms)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">5.</span>
-                      <span>Result output (text or voice commands)</span>
-                    </li>
-                  </ol>
-                </div>
+              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
+                  alt="传感器技术"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <p className="text-lg text-muted-foreground mb-4">
+                集成高精度弯曲传感器和9轴陀螺仪，识别准确率高达<span className="text-primary font-bold">95%</span>
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• <strong>精准捕捉：</strong>识别细微手势变化</li>
+                <li>• <strong>全方位感知：</strong>3D空间手势追踪</li>
+                <li>• <strong>抗干扰强：</strong>复杂环境稳定运行</li>
+              </ul>
             </CardContent>
           </Card>
-        </section>
 
-        <section>
           <Card className="shadow-elegant border-border/50">
             <CardHeader>
-              <CardTitle className="text-2xl">Algorithm Principles</CardTitle>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <Battery className="w-6 h-6 text-primary" />
+                </div>
+                <CardTitle className="text-2xl">智能电源管理</CardTitle>
+              </div>
             </CardHeader>
             <CardContent>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">1. Data Preprocessing</h3>
-                  <p className="text-muted-foreground">
-                    Raw sensor data undergoes filtering and normalization to remove noise and outliers, ensuring data quality and stability.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">2. Feature Extraction</h3>
-                  <p className="text-muted-foreground">
-                    Extracts key features from preprocessed data, such as finger bending angles, hand orientation, and movement trajectories, forming gesture feature vectors.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">3. Pattern Recognition</h3>
-                  <p className="text-muted-foreground">
-                    Uses machine learning algorithms (such as SVM, neural networks) to match gesture feature vectors with pre-trained sign language models, recognizing corresponding sign language meanings.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">4. Result Output</h3>
-                  <p className="text-muted-foreground">
-                    Converts recognized sign language meanings into text or voice output, enabling real-time communication.
-                  </p>
-                </div>
+              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
+                  alt="电源管理"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <p className="text-lg text-muted-foreground mb-4">
+                采用智能电源管理技术，续航时间提升<span className="text-primary font-bold">50%</span>
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• <strong>长效续航：</strong>单次充电可用12小时</li>
+                <li>• <strong>快速充电：</strong>30分钟充满80%电量</li>
+                <li>• <strong>智能休眠：</strong>自动节能延长使用时间</li>
+              </ul>
             </CardContent>
           </Card>
-        </section>
+
+          <Card className="shadow-elegant border-border/50">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <Wifi className="w-6 h-6 text-primary" />
+                </div>
+                <CardTitle className="text-2xl">无线连接技术</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
+                <div className="text-6xl">📡</div>
+              </div>
+              <p className="text-lg text-muted-foreground mb-4">
+                支持WiFi和蓝牙双模连接，传输速度提升<span className="text-primary font-bold">3倍</span>
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• <strong>稳定连接：</strong>10米范围内无障碍通信</li>
+                <li>• <strong>云端同步：</strong>数据实时备份到云端</li>
+                <li>• <strong>多设备支持：</strong>同时连接手机和电脑</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* 技术优势总结 */}
+        <Card className="shadow-elegant border-border/50 bg-gradient-to-br from-card to-secondary/30">
+          <CardContent className="pt-8 pb-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-foreground mb-6">技术带来的优势</h2>
+              <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div>
+                  <div className="text-5xl font-bold text-primary mb-2">95%</div>
+                  <p className="text-lg text-foreground font-semibold mb-1">识别准确率</p>
+                  <p className="text-sm text-muted-foreground">行业领先的手语识别精度</p>
+                </div>
+                <div>
+                  <div className="text-5xl font-bold text-primary mb-2">&lt;200ms</div>
+                  <p className="text-lg text-foreground font-semibold mb-1">响应速度</p>
+                  <p className="text-sm text-muted-foreground">实时翻译，沟通无延迟</p>
+                </div>
+                <div>
+                  <div className="text-5xl font-bold text-primary mb-2">12h</div>
+                  <p className="text-lg text-foreground font-semibold mb-1">续航时间</p>
+                  <p className="text-sm text-muted-foreground">全天候使用无忧</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
