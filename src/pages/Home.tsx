@@ -4,44 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Target, DollarSign, Zap } from "lucide-react";
 
 const Home = () => {
-  const features = [
-    { title: "首页", path: "/" },
-    { title: "产品介绍", path: "/product" },
-    { title: "技术原理", path: "/technology" },
-    { title: "背景故事", path: "/story" },
-    { title: "联系我们", path: "/contact" }
-  ];
-
   return (
     <div className="min-h-screen">
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-foreground">
-        <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
-            alt="背景"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900">
         <div className="relative z-10 max-w-7xl mx-auto px-4 xl:px-8 text-center py-20">
-          <h1 className="text-5xl xl:text-7xl font-bold text-background mb-4 tracking-tight">
+          <h1 className="text-5xl xl:text-7xl font-bold text-white mb-4 tracking-tight">
             手语翻译手套
           </h1>
-          <h2 className="text-3xl xl:text-5xl font-bold text-background mb-12">
+          <h2 className="text-3xl xl:text-5xl font-bold text-white mb-12">
             让每一次沉默的比划，都被世界听见
           </h2>
-          
-          <div className="grid grid-cols-2 xl:grid-cols-5 gap-4 max-w-4xl mx-auto mb-12">
-            {features.map((feature, index) => (
-              <Link key={index} to={feature.path}>
-                <div className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-lg p-6 hover:bg-background/20 transition-all cursor-pointer">
-                  <h3 className="text-lg font-bold text-background">{feature.title}</h3>
-                </div>
-              </Link>
-            ))}
-          </div>
 
-          <p className="text-lg xl:text-xl text-background/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg xl:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
             一款低成本、能实时将手语翻译成语音的智能手套
           </p>
         </div>
