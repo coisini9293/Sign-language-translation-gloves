@@ -6,14 +6,12 @@ const Story = () => {
     {
       name: "Carolin",
       role: "Business Lead",
-      description: "Business management major, skilled in market analysis and product planning, dedicated to making technology products more user-friendly",
-      image: "https://miaoda-site-img.cdn.bcebos.com/images/2aefc4cc-713c-45e1-89f6-ae4081548fa2.jpg"
+      description: "Business management major, skilled in market analysis and product planning, dedicated to making technology products more user-friendly"
     },
     {
       name: "Stephen",
       role: "Technical Lead",
-      description: "Electronic engineering major, focused on wearable device and sensor technology R&D, with extensive hardware development experience",
-      image: "https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
+      description: "Electronic engineering major, focused on wearable device and sensor technology R&D, with extensive hardware development experience"
     }
   ];
 
@@ -84,13 +82,6 @@ const Story = () => {
               <Card key={index} className="shadow-elegant border-border/50 hover:shadow-glow transition-all">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-32 h-32 bg-secondary rounded-full mb-4 flex items-center justify-center">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                    </div>
                     <h3 className="text-2xl font-bold text-foreground mb-1">{member.name}</h3>
                     <p className="text-primary font-semibold mb-3">{member.role}</p>
                     <p className="text-muted-foreground">{member.description}</p>

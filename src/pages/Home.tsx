@@ -114,7 +114,7 @@ const Home = () => {
                     <h3 className="text-2xl font-bold text-foreground">Social Impact</h3>
                   </div>
                   <p className="text-muted-foreground text-lg">
-                    Beyond being a commercial product, it carries strong values of inclusivity and accessibility, making it well-positioned for partnerships with governments, schools, and nonprofits.
+                    Providing a new way for mute-deaf people to communicate with the world, breaking down barriers and fostering inclusivity through innovative technology.
                   </p>
                 </div>
               </CardContent>

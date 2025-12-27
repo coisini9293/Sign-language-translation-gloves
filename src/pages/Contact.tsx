@@ -154,21 +154,7 @@ const Contact = () => {
               <CardContent className="space-y-4">
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
-                  <p className="text-muted-foreground">contact@signglove.com</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Social Media</h3>
-                  <div className="flex gap-4">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      Twitter
-                    </a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      LinkedIn
-                    </a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      GitHub
-                    </a>
-                  </div>
+                  <p className="text-muted-foreground">linyusen188511@163.com</p>
                 </div>
               </CardContent>
             </Card>
