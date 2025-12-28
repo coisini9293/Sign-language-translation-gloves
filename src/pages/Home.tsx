@@ -133,40 +133,31 @@ const Home = () => {
             Every detail designed for better communication experience
           </p>
           
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Intelligent Recognition, Accurate Translation</h3>
-              <p className="text-muted-foreground text-lg mb-6">
-                Using multi-sensor fusion technology and AI algorithms to achieve high-precision sign language recognition. Whether in daily communication or professional scenarios, it accurately understands every gesture.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-primary text-sm">✓</span>
-                  </div>
-                  <span className="text-muted-foreground">High-precision sensors capture hand movements</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-primary text-sm">✓</span>
-                  </div>
-                  <span className="text-muted-foreground">Real-time processing with low-latency response</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-primary text-sm">✓</span>
-                  </div>
-                  <span className="text-muted-foreground">Supports natural conversation scenarios</span>
-                </li>
-              </ul>
-            </div>
-            <div className="aspect-video bg-secondary rounded-2xl shadow-elegant overflow-hidden">
-              <img
-                src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
-                alt="Intelligent recognition feature"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="max-w-3xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Intelligent Recognition, Accurate Translation</h3>
+            <p className="text-muted-foreground text-lg mb-6 text-center">
+              Using multi-sensor fusion technology and AI algorithms to achieve high-precision sign language recognition. Whether in daily communication or professional scenarios, it accurately understands every gesture.
+            </p>
+            <ul className="space-y-3 max-w-2xl mx-auto">
+              <li className="flex items-start gap-2">
+                <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-primary text-sm">✓</span>
+                </div>
+                <span className="text-muted-foreground">High-precision sensors capture hand movements</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-primary text-sm">✓</span>
+                </div>
+                <span className="text-muted-foreground">Real-time processing with low-latency response</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-primary text-sm">✓</span>
+                </div>
+                <span className="text-muted-foreground">Supports natural conversation scenarios</span>
+              </li>
+            </ul>
           </div>
 
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
@@ -198,8 +189,8 @@ const Home = () => {
             </div>
             <div className="xl:order-1 aspect-video bg-secondary rounded-2xl shadow-elegant overflow-hidden">
               <img
-                src="https://miaoda-site-img.cdn.bcebos.com/images/3d71cedf-e0b5-477c-99f0-70b79915c505.jpg"
-                alt="Lightweight and comfortable design"
+                src="/glove-wearing.png"
+                alt="Person wearing sign language glove"
                 className="w-full h-full object-cover"
               />
             </div>
