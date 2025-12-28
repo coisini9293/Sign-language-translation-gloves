@@ -1,26 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, TrendingUp, Download, FileText, BookOpen } from "lucide-react";
+import { CheckCircle2, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 const Product = () => {
   const navigate = useNavigate();
-  const resources = [
-    {
-      title: "Technical Whitepaper",
-      description: "In-depth analysis of the technical principles, algorithm design, and performance metrics of the sign language glove",
-      icon: FileText,
-      fileSize: "3.8 MB",
-      downloadUrl: "#"
-    },
-    {
-      title: "Promotional Brochure",
-      description: "Complete user guide including device wearing, power on, gesture input, troubleshooting, and maintenance instructions. Covers all aspects from basic operation to firmware upgrade.",
-      icon: BookOpen,
-      fileSize: "2.1 MB",
-      downloadUrl: "/user-guide.md"
-    }
-  ];
 
   return (
     <div className="min-h-screen py-12">
@@ -72,39 +56,37 @@ const Product = () => {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Resource Downloads</h2>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-            {resources.map((resource, index) => (
-              <Card key={index} className="shadow-elegant border-border/50 hover:shadow-glow transition-all">
-                <CardContent className="pt-6">
-                  <div className="flex flex-col items-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
-                      <resource.icon className="w-8 h-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2 text-center">{resource.title}</h3>
-                    <p className="text-muted-foreground mb-4 text-center w-full">{resource.description}</p>
-                    <p className="text-sm text-muted-foreground mb-4 text-center w-full">File Size: {resource.fileSize}</p>
-                    <Button 
-                      className="w-full"
-                      onClick={() => {
-                        if (resource.downloadUrl !== "#") {
-                          const link = document.createElement('a');
-                          link.href = resource.downloadUrl;
-                          link.download = resource.downloadUrl.split('/').pop() || 'download';
-                          document.body.appendChild(link);
-                          link.click();
-                          document.body.removeChild(link);
-                        }
-                      }}
-                    >
-                      <Download className="w-4 h-4 mr-2" />
-                      Download
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">User Guide</h2>
+          <Card className="shadow-elegant border-border/50 max-w-4xl mx-auto">
+            <CardContent className="pt-8 pb-8">
+              <div className="space-y-6 text-muted-foreground">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">1. Wearing the Device</h3>
+                  <p>Wear the device on your forearm, ensure sensor patches contact fingers properly and device fits snugly on wrist.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">2. Power On</h3>
+                  <p>Press the power button on the side to start. Device will automatically enter gesture recognition mode.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">3. Gesture Input</h3>
+                  <p>Device samples gesture data every 2 seconds. Start from relaxed hand position, make target gesture, hold for about 1 second and wait for voice feedback.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">4. Troubleshooting</h3>
+                  <p>If gesture not recognized: return fingers to fully relaxed state, repeat gesture slowly and clearly, or restart device if needed.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">5. Charging & Maintenance</h3>
+                  <p>Use Type-C port for charging (about 2 hours for full charge). Sensor patches are removable and washable (do not immerse main unit). Firmware upgrade requires computer connection via Type-C port.</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         <section>
