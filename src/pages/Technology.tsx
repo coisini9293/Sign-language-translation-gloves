@@ -26,9 +26,9 @@ const Technology = () => {
             <CardContent>
               <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                 <img
-                  src="https://miaoda-site-img.cdn.bcebos.com/images/96807189-a6c6-483e-b011-c774b4293da8.jpg"
+                  src="/esp32-board.png"
                   alt="ESP32 Processor"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
