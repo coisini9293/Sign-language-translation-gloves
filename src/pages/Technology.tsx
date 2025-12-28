@@ -89,8 +89,12 @@ const Technology = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-6xl">📡</div>
+              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/wireless-connectivity.png"
+                  alt="Wireless Connectivity - Glove and Control Box"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="text-lg text-muted-foreground mb-4">
                 Supports WiFi and Bluetooth dual-mode connectivity, providing stable wireless communication
