@@ -4,12 +4,12 @@ import { Heart, Users, Target } from "lucide-react";
 const Story = () => {
   const teamMembers = [
     {
-      name: "Carolin",
+      name: "Carolin Shen",
       role: "Business Lead",
       description: "Business management major, skilled in market analysis and product planning, dedicated to making technology products more user-friendly"
     },
     {
-      name: "Stephen",
+      name: "Stephen Lin",
       role: "Technical Lead",
       description: "Electronic engineering major, focused on wearable device and sensor technology R&D, with extensive hardware development experience"
     }
