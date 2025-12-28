@@ -45,15 +45,15 @@ const Contact = () => {
     },
     {
       question: "When will the product be available?",
-      answer: "We are currently in the prototype testing phase and plan to begin small-scale trial production in 2024. We will announce the official launch date on our website."
+      answer: "We are currently in the prototype testing phase and plan to begin small-scale trial production in 2027. We will announce the official launch date on our website."
     },
     {
       question: "Does the glove support all sign languages?",
-      answer: "Currently, we primarily support American Sign Language (ASL) and Chinese Sign Language (CSL). We plan to add support for more sign language systems in the future."
+      answer: "Currently, we primarily support Chinese Sign Language (CSL). We plan to add support for more sign language systems in the future."
     },
     {
       question: "How accurate is the recognition?",
-      answer: "After over 1000 tests, our sign language recognition accuracy remains stable above 92%. We continue to optimize algorithms to improve recognition accuracy."
+      answer: "After over 100 tests, our sign language recognition accuracy remains stable above 92%. We continue to optimize algorithms to improve recognition accuracy."
     },
     {
       question: "How do I become a partner?",

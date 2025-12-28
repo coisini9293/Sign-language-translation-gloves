@@ -53,7 +53,7 @@ const Product = () => {
                 <div className="text-center">
                   <div className="text-5xl font-bold text-primary mb-2">92%</div>
                   <p className="text-muted-foreground">
-                    After 1000+ tests, sign language recognition accuracy remains stable above 92%
+                    After 100+ tests, sign language recognition accuracy remains stable above 92%
                   </p>
                 </div>
               </CardContent>
