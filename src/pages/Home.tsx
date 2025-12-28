@@ -33,12 +33,12 @@ const Home = () => {
             </Link>
           </div>
 
-          {/* 产品图片展示 */}
+          {/* Product Image Display */}
           <div className="max-w-4xl mx-auto">
             <div className="aspect-video bg-white/5 rounded-2xl shadow-2xl overflow-hidden border border-white/10 backdrop-blur-sm">
               <img
-                src="https://miaoda-site-img.cdn.bcebos.com/images/96807189-a6c6-483e-b011-c774b4293da8.jpg"
-                alt="手语翻译手套产品展示"
+                src="/glove-hero.png"
+                alt="Sign Language Glove Product Display"
                 className="w-full h-full object-cover"
               />
             </div>
