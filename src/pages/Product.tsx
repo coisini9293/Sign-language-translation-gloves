@@ -15,20 +15,10 @@ const Product = () => {
     },
     {
       title: "Promotional Brochure",
-      description: `User Guide: 
-      
-1. Wearing the Device - Wear the device on your forearm, ensure sensor patches contact fingers properly and device fits snugly on wrist.
-
-2. Power On - Press the power button on the side to start. Device will automatically enter gesture recognition mode.
-
-3. Gesture Input - Device samples gesture data every 2 seconds. Start from relaxed hand position, make target gesture, hold for about 1 second and wait for voice feedback.
-
-4. Troubleshooting - If gesture not recognized: return fingers to fully relaxed state, repeat gesture slowly and clearly, or restart device if needed.
-
-5. Charging & Maintenance - Use Type-C port for charging (about 2 hours for full charge). Sensor patches are removable and washable (do not immerse main unit). Firmware upgrade requires computer connection via Type-C port.`,
+      description: "Complete user guide including device wearing, power on, gesture input, troubleshooting, and maintenance instructions. Covers all aspects from basic operation to firmware upgrade.",
       icon: BookOpen,
       fileSize: "2.1 MB",
-      downloadUrl: "#"
+      downloadUrl: "/user-guide.md"
     }
   ];
 
@@ -92,9 +82,21 @@ const Product = () => {
                       <resource.icon className="w-8 h-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2 text-center">{resource.title}</h3>
-                    <p className="text-muted-foreground mb-4 text-left whitespace-pre-line w-full">{resource.description}</p>
+                    <p className="text-muted-foreground mb-4 text-center w-full">{resource.description}</p>
                     <p className="text-sm text-muted-foreground mb-4 text-center w-full">File Size: {resource.fileSize}</p>
-                    <Button className="w-full">
+                    <Button 
+                      className="w-full"
+                      onClick={() => {
+                        if (resource.downloadUrl !== "#") {
+                          const link = document.createElement('a');
+                          link.href = resource.downloadUrl;
+                          link.download = resource.downloadUrl.split('/').pop() || 'download';
+                          document.body.appendChild(link);
+                          link.click();
+                          document.body.removeChild(link);
+                        }
+                      }}
+                    >
                       <Download className="w-4 h-4 mr-2" />
                       Download
                     </Button>
