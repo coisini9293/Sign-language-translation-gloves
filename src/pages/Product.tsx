@@ -1,18 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, TrendingUp, Download, FileText, Presentation, BookOpen } from "lucide-react";
+import { CheckCircle2, TrendingUp, Download, FileText, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 const Product = () => {
   const navigate = useNavigate();
   const resources = [
-    {
-      title: "Project Overview PPT",
-      description: "Detailed introduction to the background, technical solutions, and application scenarios of the sign language glove project",
-      icon: Presentation,
-      fileSize: "5.2 MB",
-      downloadUrl: "#"
-    },
     {
       title: "Technical Whitepaper",
       description: "In-depth analysis of the technical principles, algorithm design, and performance metrics of the sign language glove",
@@ -22,7 +15,17 @@ const Product = () => {
     },
     {
       title: "Promotional Brochure",
-      description: "Public-facing product promotional materials, including product features and user guides",
+      description: `User Guide: 
+      
+1. Wearing the Device - Wear the device on your forearm, ensure sensor patches contact fingers properly and device fits snugly on wrist.
+
+2. Power On - Press the power button on the side to start. Device will automatically enter gesture recognition mode.
+
+3. Gesture Input - Device samples gesture data every 2 seconds. Start from relaxed hand position, make target gesture, hold for about 1 second and wait for voice feedback.
+
+4. Troubleshooting - If gesture not recognized: return fingers to fully relaxed state, repeat gesture slowly and clearly, or restart device if needed.
+
+5. Charging & Maintenance - Use Type-C port for charging (about 2 hours for full charge). Sensor patches are removable and washable (do not immerse main unit). Firmware upgrade requires computer connection via Type-C port.`,
       icon: BookOpen,
       fileSize: "2.1 MB",
       downloadUrl: "#"
@@ -80,17 +83,17 @@ const Product = () => {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Resource Downloads</h2>
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
             {resources.map((resource, index) => (
               <Card key={index} className="shadow-elegant border-border/50 hover:shadow-glow transition-all">
                 <CardContent className="pt-6">
-                  <div className="flex flex-col items-center text-center">
+                  <div className="flex flex-col items-center">
                     <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                       <resource.icon className="w-8 h-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">{resource.title}</h3>
-                    <p className="text-muted-foreground mb-4">{resource.description}</p>
-                    <p className="text-sm text-muted-foreground mb-4">File Size: {resource.fileSize}</p>
+                    <h3 className="text-xl font-bold text-foreground mb-2 text-center">{resource.title}</h3>
+                    <p className="text-muted-foreground mb-4 text-left whitespace-pre-line w-full">{resource.description}</p>
+                    <p className="text-sm text-muted-foreground mb-4 text-center w-full">File Size: {resource.fileSize}</p>
                     <Button className="w-full">
                       <Download className="w-4 h-4 mr-2" />
                       Download
