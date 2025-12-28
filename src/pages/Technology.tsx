@@ -52,12 +52,21 @@ const Technology = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://miaoda-site-img.cdn.bcebos.com/images/b3b7abe6-9468-4816-b78b-1d56b18fadbc.jpg"
-                  alt="Sensor Technology"
-                  className="w-full h-full object-cover"
-                />
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center overflow-hidden p-4">
+                  <img
+                    src="/sensor-1.png"
+                    alt="Gyroscope Sensor"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center overflow-hidden p-4">
+                  <img
+                    src="/sensor-2.png"
+                    alt="Flex Sensor"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
               <p className="text-lg text-muted-foreground mb-4">
                 Integrating high-precision flex sensors and gyroscopes for accurate sign language recognition
